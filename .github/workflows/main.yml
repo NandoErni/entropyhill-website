@@ -14,5 +14,5 @@ jobs:
     runs-on: self-hosted
     environment: production
     steps:
-      - name: deploy
-        run: echo "Hello World"
+      - run: npm -v
+      - run: node -v
