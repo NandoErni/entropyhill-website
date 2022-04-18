@@ -23,3 +23,7 @@ jobs:
         run: npm install
       - name: Build page
         run: npm run build
+      - name: Setup sftp command
+        run: echo "put -r ./build /entropyhill" >> sftp_command
+      - name: send via sftp
+        run: cat sftp_command
