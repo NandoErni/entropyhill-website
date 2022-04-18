@@ -1,6 +1,8 @@
 {
   "name": "entropyhill-website",
+  "homepage": "https://entropyhill.nandoerni.com",
   "version": "0.1.0",
+  "description": "Band-website for Entropy Hill",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
