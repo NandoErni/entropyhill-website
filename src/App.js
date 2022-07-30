@@ -1,15 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import './style/app.scss';
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+import Home from './pages';
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <b>Entropy Hill Website</b>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route path='/' element={<Home/>} exact />
+      </Routes>
+    </Router>
   );
 }
 
 export default App;
+
+/*<Route path='/signin' element={<Signin/>} exact />*/
