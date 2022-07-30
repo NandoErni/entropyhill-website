@@ -15,35 +15,36 @@ import {
   Img
 } from './InfoElements'
 
-const Info = ({lightBg, id, imgStart, topLine, lightText, headline, darkText, description, buttonLabel, img, alt, primary, dark, dark2}) => {
+const Info = ({id, isLightThemed, topLine, headline, description, buttonLabel, buttonDestination, isImageAtStart, image, alt}) => {
   return (
     <>
-      <InfoContainer lightBg={lightBg} id={id}>
+      <InfoContainer isLightThemed={isLightThemed} id={id}>
         <InfoWrapper>
-          <InfoRow imgStart={imgStart}>
+          <InfoRow isImageAtStart={isImageAtStart}>
             <Column1>
               <TextWrapper>
                 <TopLine>{topLine}</TopLine>
-                <Heading lightText={lightText}>{headline}</Heading>
-                <Subtitle darkText={darkText}>{description}</Subtitle>
-                <BtnWrap>
-                  <Button to='home' 
-                  smooth={true} 
-                  duration={500} 
-                  spy={true}
-                  exact='true'
-                  offset={-80}
-                  primary={primary ? 1 : 0}
-                  dark={dark ? 1 : 0}
-                  dark2={dark2 ? 1 : 0}>
-                    {buttonLabel}
-                  </Button>
-                </BtnWrap>
+                <Heading isLightThemed={isLightThemed}>{headline}</Heading>
+                <Subtitle isLightThemed={isLightThemed}>{description}</Subtitle>
+                {buttonLabel ?
+                  (<BtnWrap>
+                    <Button to={buttonDestination} 
+                    smooth={true} 
+                    duration={500} 
+                    spy={true}
+                    exact='true'
+                    offset={-80}
+                    primary={isLightThemed ? 0 : 1}
+                    dark={isLightThemed ? 0 : 1}>
+                      {buttonLabel}
+                    </Button>
+                  </BtnWrap>) : (<></>)
+                }
               </TextWrapper>
             </Column1>
             <Column2>
               <ImgWrap>
-                <Img src={img} alt={alt}/>
+                <Img src={image} alt={alt}/>
               </ImgWrap>
             </Column2>
           </InfoRow>

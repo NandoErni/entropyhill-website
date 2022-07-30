@@ -30,40 +30,40 @@ const Footer = () => {
           <FooterLinksWrapper>
             <FooterLinkItems>
               <FooterLinkTitle>About us</FooterLinkTitle>
-              <FooterLink to='/signin'>How it works</FooterLink>
-              <FooterLink to='/signin'>Socialmedia</FooterLink>
-              <FooterLink to='/signin'>Weiteres</FooterLink>
-              <FooterLink to='/signin'>Und so</FooterLink>
-              <FooterLink to='/signin'>Impressum</FooterLink>
+              <FooterLink to='/'>How it works</FooterLink>
+              <FooterLink to='/'>Socialmedia</FooterLink>
+              <FooterLink to='/'>Weiteres</FooterLink>
+              <FooterLink to='/'>Und so</FooterLink>
+              <FooterLink to='/'>Impressum</FooterLink>
             </FooterLinkItems>
 
             <FooterLinkItems>
               <FooterLinkTitle>About us</FooterLinkTitle>
-              <FooterLink to='/signin'>How it works</FooterLink>
-              <FooterLink to='/signin'>Socialmedia</FooterLink>
-              <FooterLink to='/signin'>Weiteres</FooterLink>
-              <FooterLink to='/signin'>Und so</FooterLink>
-              <FooterLink to='/signin'>Impressum</FooterLink>
+              <FooterLink to='/'>How it works</FooterLink>
+              <FooterLink to='/'>Socialmedia</FooterLink>
+              <FooterLink to='/'>Weiteres</FooterLink>
+              <FooterLink to='/'>Und so</FooterLink>
+              <FooterLink to='/'>Impressum</FooterLink>
             </FooterLinkItems>
           </FooterLinksWrapper>
           
-          <FooterLinksWrapper>toggleHome
+          <FooterLinksWrapper>
             <FooterLinkItems>
               <FooterLinkTitle>About us</FooterLinkTitle>
-              <FooterLink to='/signin'>How it works</FooterLink>
-              <FooterLink to='/signin'>Socialmedia</FooterLink>
-              <FooterLink to='/signin'>Weiteres</FooterLink>
-              <FooterLink to='/signin'>Und so</FooterLink>
-              <FooterLink to='/signin'>Impressum</FooterLink>
+              <FooterLink to='/'>How it works</FooterLink>
+              <FooterLink to='/'>Socialmedia</FooterLink>
+              <FooterLink to='/'>Weiteres</FooterLink>
+              <FooterLink to='/'>Und so</FooterLink>
+              <FooterLink to='/'>Impressum</FooterLink>
             </FooterLinkItems>
 
             <FooterLinkItems>
               <FooterLinkTitle>About us</FooterLinkTitle>
-              <FooterLink to='/signin'>How it works</FooterLink>
-              <FooterLink to='/signin'>Socialmedia</FooterLink>
-              <FooterLink to='/signin'>Weiteres</FooterLink>
-              <FooterLink to='/signin'>Und so</FooterLink>
-              <FooterLink to='/signin'>Impressum</FooterLink>
+              <FooterLink to='/'>How it works</FooterLink>
+              <FooterLink to='/'>Socialmedia</FooterLink>
+              <FooterLink to='/'>Weiteres</FooterLink>
+              <FooterLink to='/'>Und so</FooterLink>
+              <FooterLink to='/'>Impressum</FooterLink>
             </FooterLinkItems>
           </FooterLinksWrapper>
         </FooterLinksContainer>

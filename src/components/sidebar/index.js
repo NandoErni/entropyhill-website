@@ -1,4 +1,5 @@
 import React from 'react'
+import { NAVIGATION } from '../Constants'
 import {
   SidebarContainer, 
   Icon, 
@@ -18,10 +19,9 @@ function Sidebar({isOpen, toggle}) {
       </Icon>
       <SidebarWrapper>
         <SidebarMenu>
-          <SidebarLink to='about' onClick={toggle}>About</SidebarLink>
-          <SidebarLink to='discover' onClick={toggle}>Discover</SidebarLink>
-          <SidebarLink to='services' onClick={toggle}>Services</SidebarLink>
-          <SidebarLink to='signup' onClick={toggle}>Sign Up</SidebarLink>
+        {NAVIGATION.map((item) => {
+                return (<SidebarLink to={item.id} onClick={toggle}>{item.text}</SidebarLink>)
+              })}
         </SidebarMenu>
         <SideBtnWrap>
           <SidebarRoute to='/signin'>Sign In</SidebarRoute>

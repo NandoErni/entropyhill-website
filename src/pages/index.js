@@ -4,7 +4,7 @@ import Navbar from '../components/navbar'
 import Sidebar from '../components/sidebar'
 import Info from '../components/info'
 import Services from '../components/services'
-import { homeObjOne, homeObjThree, homeObjTwo } from '../components/info/Data'
+import { aboutSection, musicSection, showsSection, contactSection } from '../components/info/Data'
 import Footer from '../components/footer'
 
 const Home = () => {
@@ -20,10 +20,11 @@ const Home = () => {
       <Sidebar isOpen={isOpen} toggle={toggle}/>
       <Navbar toggle={toggle}/>
       <Hero />
-      <Info {...homeObjOne}/>
-      <Info {...homeObjTwo}/>
-      <Services />
-      <Info {...homeObjThree}/>
+      <Info {...aboutSection}/>
+      <Info {...musicSection}/>
+      {/* <Services /> */}
+      <Info {...showsSection}/>
+      <Info {...contactSection}/>
       <Footer/>
     </>
   )
