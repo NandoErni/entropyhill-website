@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react'
 import { FaBars } from 'react-icons/fa'
 import { IconContext } from 'react-icons/lib'
 import { animateScroll as scroll } from 'react-scroll'
-import { NAVIGATION } from '../Constants'
+import { NAVIGATION, COLOR } from '../Constants'
 import {
   Nav, 
   NavbarContainer, 
@@ -32,7 +32,7 @@ const Navbar = ({toggle}) => {
 
   return (
     <>
-      <IconContext.Provider value={{ color: '#fff' }}>
+      <IconContext.Provider value={{ color: COLOR.lightStroke }}>
         <Nav scrollNav={scrollNav}>
           <NavbarContainer>
             <NavLogo to='/' onClick={toggleHome}>Entropy Hill</NavLogo>

@@ -1,9 +1,10 @@
 import styled from 'styled-components'
 import { Link as LinkRouter } from 'react-router-dom'
 import { Link as LinkScroll } from 'react-scroll'
+import { COLOR } from '../Constants'
 
 export const Nav = styled.nav`
-  background: ${({scrollNav}) => (scrollNav ? '#000' : 'transparent')};
+  background: ${({scrollNav}) => (scrollNav ? COLOR.secondary : 'transparent')};
   height: 80px;
   margin-top: -80px;
   display: flex;
@@ -30,7 +31,7 @@ export const NavbarContainer = styled.div`
 `
 
 export const NavLogo = styled(LinkRouter)`
-  color: #fff;
+  color: ${COLOR.lightStroke};
   justify-self: flex-start;
   cursor: pointer;
   font-size: 1.5rem;
@@ -51,7 +52,7 @@ export const MobileIcon = styled.div`
     right: 0; transform: translate(-100%, 60%);
     font-size: 1.8rem;
     cursor: pointer;
-    color: #fff;
+    color: ${COLOR.lightStroke};
   }
 `
 
@@ -72,7 +73,7 @@ export const NavItem = styled.li`
 `
 
 export const NavLinks = styled(LinkScroll)`
-  color: #fff;
+  color: ${COLOR.lightStroke};
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -81,7 +82,7 @@ export const NavLinks = styled(LinkScroll)`
   cursor: pointer;
 
   &.active {
-    border-bottom: 3px solid #01bf71;
+    border-bottom: 3px solid ${COLOR.primary};
     transition: 0.1s ease-in-out;
   }
 `
@@ -97,10 +98,10 @@ export const NavBtn = styled.nav`
 
 export const NavBtnLink = styled(LinkRouter) `
   border-radius: 50px;
-  background: #01bf71;
+  background: ${COLOR.primary};
   white-space: nowrap;
   padding: 10px 22px;
-  color: #010606;
+  color: ${COLOR.secondary};
   font-size: 16px;
   outline: none;
   border: none;
@@ -110,7 +111,7 @@ export const NavBtnLink = styled(LinkRouter) `
 
   &:hover {
     transition: all 0.2s ease-in-out;
-    background: #fff;
-    color: #0106f6;
+    background: ${COLOR.lightStroke};
+    color: ${COLOR.secondary};
   }
 `

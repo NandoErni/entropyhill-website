@@ -2,13 +2,14 @@ import styled from 'styled-components'
 import {FaTimes} from 'react-icons/fa'
 import { Link as LinkRouter } from 'react-router-dom'
 import { Link as LinkScroll } from 'react-scroll'
+import { COLOR } from '../Constants'
 
 export const SidebarContainer = styled.aside`
   position: fixed;
   z-index: 999;
   width: 100%;
   height: 100%;
-  background: #0d0d0d;
+  background: ${COLOR.sidebarBackground};
   display: grid;
   align-items: center;
   top: 0;
@@ -19,7 +20,7 @@ export const SidebarContainer = styled.aside`
 `
 
 export const CloseIcon = styled(FaTimes)`
-  color:  #fff;
+  color: ${COLOR.lightStroke};
 `
 
 export const Icon = styled.div`
@@ -33,7 +34,7 @@ export const Icon = styled.div`
 `
 
 export const SidebarWrapper = styled.div`
-  color: #fff;
+  color: ${COLOR.lightStroke};
 `
 
 export const SidebarMenu = styled.ul`
@@ -56,11 +57,11 @@ export const SidebarLink = styled(LinkScroll)`
   list-style: none;
   transition: 0.2s ease-in-out;
   text-decoration: none;
-  color: #fff;
+  color: ${COLOR.lightStroke};
   cursor: pointer;
 
   &:hover {
-    color: #01bf71;
+    color: ${COLOR.primary};
     transition: 0.2s ease-in-out;
   }
 `
@@ -72,10 +73,10 @@ export const SideBtnWrap = styled.div`
 
 export const SidebarRoute = styled(LinkRouter)`
   border-radius: 50px;
-  background: #01bf71;
+  background: ${COLOR.primary};
   white-space: nowrap;
   padding: 16px 64px;
-  color: #010606;
+  color: ${COLOR.secondary};
   font-size: 16px;
   outline: none;
   border: none;
@@ -85,7 +86,7 @@ export const SidebarRoute = styled(LinkRouter)`
 
   &:hover {
     transition: all 02s ease-in-out;
-    background: #fff;
-    color: #010606;
+    background: ${COLOR.lightStroke};
+    color: ${COLOR.secondary};
   }
 `

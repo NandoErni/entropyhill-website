@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import Video from '../../videos/video_jesus.mp4'
 import { Button } from '../ButtonElements'
+import { HOME, SHOWS } from '../Constants'
 import {
   HeroContainer,
   HeroBg,
@@ -21,7 +22,7 @@ const Hero = () => {
   }
 
   return (
-    <HeroContainer id='home'>
+    <HeroContainer id={HOME.id}>
       <HeroBg>
         <VideoBg autoPlay loop muted src={Video} type='video/mp4'/>
       </HeroBg>
@@ -29,7 +30,7 @@ const Hero = () => {
         <HeroH1>Entropy Hill</HeroH1>
         <HeroP>Rock-Band un so lol</HeroP>
         <HeroBtnWrapper>
-          <Button to='signup' 
+          <Button to={SHOWS.id} 
                   onMouseEnter={onHover} 
                   onMouseLeave={onHover} 
                   primary='true' 
@@ -39,7 +40,7 @@ const Hero = () => {
                   spy={true}
                   exact='true'
                   offset={-80}>
-            Get started {hover ? <ArrowForward /> : <ArrowRight />}
+            {SHOWS.text} {hover ? <ArrowForward /> : <ArrowRight />}
           </Button>
         </HeroBtnWrapper>
       </HeroContent>

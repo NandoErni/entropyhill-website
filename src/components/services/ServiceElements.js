@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { COLOR } from '../Constants'
 
 export const ServicesContainer = styled.div`
   height: 800px;
@@ -6,7 +7,7 @@ export const ServicesContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #010606;
+  background: ${COLOR.secondary};
 
   @media screen and (max-width: 768px) {
     height: 1100px;
@@ -37,7 +38,7 @@ export const ServicesWrapper = styled.div`
 `
 
 export const ServicesCard = styled.div`
-  background: #fff;
+  background: ${COLOR.lightStroke};
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -63,7 +64,7 @@ export const ServicesIcon = styled.img`
 
 export const ServicesH1 = styled.h1`
   font-size: 2.5rem;
-  color: #fff;
+  color: ${COLOR.lightStroke};
   margin-bottom: 64px;
 
   @media screen and (max-width: 480px) {

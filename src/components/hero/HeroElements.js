@@ -1,8 +1,9 @@
 import styled from 'styled-components'
 import {MdKeyboardArrowRight, MdArrowForward} from 'react-icons/md'
+import { COLOR } from '../Constants'
 
 export const HeroContainer = styled.div`
-  background: #0c0c0c;
+  background: ${COLOR.sidebarBackground};
   display: flex;
   justify-content: center;
   align-items: center;
@@ -48,7 +49,7 @@ export const VideoBg = styled.video`
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
-  background: #232a34;
+  background: ${COLOR.videoBackground};
 `
 
 export const HeroContent = styled.div`
@@ -62,7 +63,7 @@ export const HeroContent = styled.div`
 `
 
 export const HeroH1 = styled.h1`
-  color: #fff;
+  color: ${COLOR.lightStroke};
   font-size: 48px;
   text-align: center;
 
@@ -77,7 +78,7 @@ export const HeroH1 = styled.h1`
 
 export const HeroP = styled.p`
   margin-top: 24px;
-  color: #fff;
+  color: ${COLOR.lightStroke};
   font-size: 24px;
   text-align: center;
   max-width: 600px;
