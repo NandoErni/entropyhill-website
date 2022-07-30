@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { COLOR } from '../Constants'
+import { COLOR, FONT_SIZE } from '../Constants'
 
 export const ServicesContainer = styled.div`
   height: 800px;
@@ -63,21 +63,21 @@ export const ServicesIcon = styled.img`
 `
 
 export const ServicesH1 = styled.h1`
-  font-size: 2.5rem;
+  font-size: ${FONT_SIZE.xxxl};
   color: ${COLOR.lightStroke};
   margin-bottom: 64px;
 
   @media screen and (max-width: 480px) {
-    font-size: 2rem;
+    font-size: ${FONT_SIZE.xxl};
   }
 `
 
 export const ServicesH2 = styled.h2`
-  font-size: 1rem;
+  font-size: ${FONT_SIZE.m};
   margin-bottom: 10px;
 `
 
 export const ServicesP = styled.p`
-  font-size: 1rem;
+  font-size: ${FONT_SIZE.m};
   text-align: center;
 `

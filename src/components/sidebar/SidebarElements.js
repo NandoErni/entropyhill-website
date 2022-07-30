@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import {FaTimes} from 'react-icons/fa'
 import { Link as LinkRouter } from 'react-router-dom'
 import { Link as LinkScroll } from 'react-scroll'
-import { COLOR } from '../Constants'
+import { COLOR, FONT_SIZE } from '../Constants'
 
 export const SidebarContainer = styled.aside`
   position: fixed;
@@ -28,7 +28,7 @@ export const Icon = styled.div`
   top: 1.2rem;
   right: 1.5rem;
   background: transparent;
-  font-size: 2rem;
+  font-size: ${FONT_SIZE.xxl};
   cursor: pointer;
   outline: none;
 `
@@ -52,7 +52,7 @@ export const SidebarLink = styled(LinkScroll)`
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.5rem;
+  font-size: ${FONT_SIZE.xl};
   text-decoration: none;
   list-style: none;
   transition: 0.2s ease-in-out;
@@ -77,7 +77,7 @@ export const SidebarRoute = styled(LinkRouter)`
   white-space: nowrap;
   padding: 16px 64px;
   color: ${COLOR.secondary};
-  font-size: 16px;
+  font-size: ${FONT_SIZE.m};
   outline: none;
   border: none;
   cursor: pointer;

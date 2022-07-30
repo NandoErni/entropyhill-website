@@ -20,3 +20,14 @@ export const COLOR = {
   footerBackground: '#101522',
   videoBackground: '#232a34'
 }
+
+export const FONT_SIZE = {
+  root: '16px',
+  s: '0.875rem',
+  m: '1rem',
+  l: '1.25rem',
+  xl: '1.5rem',
+  xxl: '2rem',
+  xxxl: '2.5rem',
+  xxxxl: '3rem'
+}

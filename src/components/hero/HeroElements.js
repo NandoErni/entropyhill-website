@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import {MdKeyboardArrowRight, MdArrowForward} from 'react-icons/md'
-import { COLOR } from '../Constants'
+import { COLOR, FONT_SIZE } from '../Constants'
 
 export const HeroContainer = styled.div`
   background: ${COLOR.sidebarBackground};
@@ -64,31 +64,31 @@ export const HeroContent = styled.div`
 
 export const HeroH1 = styled.h1`
   color: ${COLOR.lightStroke};
-  font-size: 48px;
+  font-size: ${FONT_SIZE.xxxxl};
   text-align: center;
 
   @media screen and (max-width: 786px) {
-    font-size: 40px;
+    font-size: ${FONT_SIZE.xxxl};
   }
 
   @media screen and (max-width: 480px) {
-    font-size: 32px;
+    font-size: ${FONT_SIZE.xxl};
   }
 `
 
 export const HeroP = styled.p`
   margin-top: 24px;
   color: ${COLOR.lightStroke};
-  font-size: 24px;
+  font-size: ${FONT_SIZE.xl};
   text-align: center;
   max-width: 600px;
 
   @media screen and (max-width: 786px) {
-    font-size: 24px;
+    font-size: ${FONT_SIZE.xl};
   }
 
   @media screen and (max-width: 480px) {
-    font-size: 18px;
+    font-size: ${FONT_SIZE.l};
   }
 `
 
@@ -101,10 +101,10 @@ export const HeroBtnWrapper = styled.div`
 
 export const ArrowForward = styled(MdArrowForward)`
   margin-left: 8px;
-  font-size: 20px;
+  font-size: ${FONT_SIZE.l};
 `
 
 export const ArrowRight = styled(MdKeyboardArrowRight)`
   margin-left: 8px;
-  font-size: 20px;
+  font-size: ${FONT_SIZE.l};
 `

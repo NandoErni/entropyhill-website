@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import { Link as LinkRouter } from 'react-router-dom'
 import { Link as LinkScroll } from 'react-scroll'
-import { COLOR } from '../Constants'
+import { COLOR, FONT_SIZE } from '../Constants'
 
 export const Nav = styled.nav`
   background: ${({scrollNav}) => (scrollNav ? COLOR.secondary : 'transparent')};
@@ -10,7 +10,7 @@ export const Nav = styled.nav`
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1rem;
+  font-size: ${FONT_SIZE.m};
   position: sticky;
   top: 0;
   z-index: 10;
@@ -34,7 +34,7 @@ export const NavLogo = styled(LinkRouter)`
   color: ${COLOR.lightStroke};
   justify-self: flex-start;
   cursor: pointer;
-  font-size: 1.5rem;
+  font-size: ${FONT_SIZE.xl};
   display: flex;
   align-items: center;
   margin-left: 24px;
@@ -49,8 +49,9 @@ export const MobileIcon = styled.div`
     display: block;
     position: absolute;
     top: 0;
-    right: 0; transform: translate(-100%, 60%);
-    font-size: 1.8rem;
+    right: 0; 
+    transform: translate(-100%, 25%);
+    font-size: ${FONT_SIZE.xxl};
     cursor: pointer;
     color: ${COLOR.lightStroke};
   }
@@ -102,7 +103,7 @@ export const NavBtnLink = styled(LinkRouter) `
   white-space: nowrap;
   padding: 10px 22px;
   color: ${COLOR.secondary};
-  font-size: 16px;
+  font-size: ${FONT_SIZE.m};
   outline: none;
   border: none;
   cursor: pointer;

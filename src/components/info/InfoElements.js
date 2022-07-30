@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { COLOR } from '../Constants'
+import { COLOR, FONT_SIZE } from '../Constants'
 
 export const InfoContainer = styled.div`
   color: ${COLOR.lightStroke};
@@ -53,7 +53,7 @@ export const TextWrapper = styled.div`
 
 export const TopLine = styled.p`
   color: ${COLOR.primary};
-  font-size: 16px;
+  font-size: ${FONT_SIZE.m};
   line-height: 16px;
   font-weight: 700;
   letter-spacing: 1.4px;
@@ -63,20 +63,20 @@ export const TopLine = styled.p`
 
 export const Heading = styled.h1`
   margin-bottom: 24px;
-  font-size: 48px;
+  font-size: ${FONT_SIZE.xxxxl};
   line-height: 1.1;
   font-weight: 600;
   color: ${({isLightThemed}) => (isLightThemed ? COLOR.secondary : COLOR.lightStroke)};
 
   @media screen and (max-width: 480px) {
-    font-size: 32px;
+    font-size: ${FONT_SIZE.xxl};
   }
 `
 
 export const Subtitle = styled.p`
   max-width: 440px;
   margin-bottom: 35px;
-  font-size: 18px;
+  font-size: ${FONT_SIZE.l};
   line-height: 24px;
   color: ${({isLightThemed}) => (isLightThemed ? COLOR.secondary : COLOR.lightStroke)};
 `

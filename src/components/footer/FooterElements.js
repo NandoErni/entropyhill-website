@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import {Link} from 'react-router-dom'
-import { COLOR } from '../Constants'
+import { COLOR, FONT_SIZE } from '../Constants'
 
 export const FooterContainer = styled.footer`
   background-color: ${COLOR.footerBackground};
@@ -51,7 +51,7 @@ export const FooterLinkItems = styled.div`
 `
 
 export const FooterLinkTitle = styled.h1`
-  font-size: 14px;
+  font-size: ${FONT_SIZE.s};
   margin-bottom: 16px;
 `
 
@@ -59,7 +59,7 @@ export const FooterLink = styled(Link)`
   color: ${COLOR.lightStroke};
   text-decoration: none;
   margin-bottom: 0.5rem;
-  font-size: 14px;
+  font-size: ${FONT_SIZE.s};
 
   &:hover {
     color: ${COLOR.primary};
@@ -89,7 +89,7 @@ export const SocialLogo = styled(Link)`
   justify-self: start;
   cursor: pointer;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: ${FONT_SIZE.xl};
   display: flex;
   align-items: center;
   margin-bottom: 16px;
@@ -110,5 +110,5 @@ export const SocialIcons = styled.div`
 
 export const SocialIconLink = styled.a`
   color: ${COLOR.lightStroke};
-  font-size: 24px;
+  font-size: ${FONT_SIZE.xl};
 `
